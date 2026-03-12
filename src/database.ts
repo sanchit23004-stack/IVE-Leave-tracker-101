@@ -1,5 +1,5 @@
 
-import { LeaveEntry, Holiday } from './types';
+import { LeaveEntry, Holiday } from '@/types';
 
 // Updated URL provided by the user
 const SHEET_API_URL = 'https://script.google.com/macros/s/AKfycbyCBaGJwzH6YAr7_YGdgMDlHY_T_Wzrq3H96uX_RgvENyndsETA6bKEPlouuYsjn-ws/exec';

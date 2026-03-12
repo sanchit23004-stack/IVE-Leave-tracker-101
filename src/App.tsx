@@ -1,12 +1,12 @@
 
 import React, { useState, useEffect, useCallback, useRef } from 'react';
-import { ViewMode, LeaveEntry, Holiday } from './types';
-import { DBService } from './database';
-import Dashboard from './components/Dashboard';
-import LeaveForm from './components/LeaveForm';
-import AdminPanel from './components/AdminPanel';
-import Navbar from './components/Navbar';
-import UncodedRecords from './components/UncodedRecords';
+import { ViewMode, LeaveEntry, Holiday } from '@/types';
+import { DBService } from '@/database';
+import Dashboard from '@/components/Dashboard';
+import LeaveForm from '@/components/LeaveForm';
+import AdminPanel from '@/components/AdminPanel';
+import Navbar from '@/components/Navbar';
+import UncodedRecords from '@/components/UncodedRecords';
 
 const App: React.FC = () => {
   const [view, setView] = useState<ViewMode>('DASHBOARD');
