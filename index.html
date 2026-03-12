@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IVE Leave Tracker</title>
+</head>
+<body>
+    <div id="root">
+        <div style="display: flex; align-items: center; justify-content: center; height: 100vh; font-family: sans-serif; font-weight: bold; color: #64748b;">
+            INITIALIZING SECURE CONNECTION...
+        </div>
+    </div>
+    <script>
+        console.log("HTML: Script tag about to load index.tsx");
+        window.onerror = function(msg, url, line, col, error) {
+            console.error("HTML Error:", msg, "at", url, ":", line);
+            document.getElementById('root').innerHTML = '<div style="color:red; padding:20px;">ERROR: ' + msg + '</div>';
+        };
+    </script>
+    <script type="module" src="/src/index.tsx"></script>
+</body>
+</html>
